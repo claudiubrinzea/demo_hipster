@@ -1,0 +1,11 @@
+version: '2'
+services:
+    investesteintine-postgresql:
+        image: postgres:9.6.2
+        # volumes:
+        #     - ~/volumes/jhipster/investesteintine/postgresql/:/var/lib/postgresql/
+        environment:
+            - POSTGRES_USER=investesteintine
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
